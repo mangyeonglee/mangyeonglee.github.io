@@ -1,0 +1,388 @@
+/*--- basic setting ---*/
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: 'Martel';
+    background: white;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+.mainpage {
+    display: grid;
+    grid-template-rows: 180px auto;
+}
+
+#footer {
+    height: 120px;
+}
+
+
+/*-- sidebar setting --*/
+
+#header-logo {
+    background-image: url('logo_mglee.png');
+    background-size: cover;
+    height: 40px;
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+
+header {
+    grid-area: hd;
+}
+
+nav {
+    grid-area: nv;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-areas:
+    "hd"
+    "nv";
+    position: fixed;
+    padding-top: 15px;
+    padding-bottom: 6px;
+    height: auto;
+    width: 100vw;
+    background: white;
+    top: 0;
+}
+
+
+.sidebar h1 {
+    font-weight: 900;
+    margin: 0px 30px 0px 0px;
+    font-size: 32px;
+    
+}
+
+
+  
+
+/*
+.sidebar h1 {
+    display: inline-block;
+    font-size: 20pt;
+    border-style: solid;
+    border-image: linear-gradient(to right, #00249c 0%,#0098d4 100%);
+    border-image-slice: 1;
+    border-width: 5px;
+    padding: 6px;
+    margin: 0px 6px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-image: -webkit-linear-gradient(bottom left, #00249c 0%,#0098d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}*/
+
+
+
+.nav-list {
+    padding: 0;
+    margin: 20px 0px 0px 0px;
+}
+
+.nav-item {
+    display: inline-block;
+    font-size: 12pt;
+    margin: 0;
+}
+
+.nav-item a:hover {
+    background: #0e3e7e;
+    color: white;
+}
+
+
+
+/*-- contents --*/
+
+
+.contents {
+    background: white;
+    grid-row-start: 2;
+}
+
+.contents a{
+    color: #af0000;
+
+}
+
+.contents a:hover{
+    color: #001646;
+    text-decoration: underline;
+
+}
+
+
+#newsEvents, #Affiliations, #currentProjects {
+    margin-top: 60px;
+
+}
+
+/*-------backgroundimg------------*/
+
+
+#profileImage {
+    height: 200px;
+    background-image: url('IMG_1349.jpeg');
+    background-position: center bottom;
+    background-size: cover;
+}
+
+
+/*-------contact------------*/
+
+.contact-grid {
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+
+
+
+
+/*-------newsandevents------------*/
+
+
+.news-grid {
+    display: grid;   
+}
+
+.news-col-2 {
+    padding-bottom: 12px;
+}
+
+.news-col-1 {
+    font-weight: 900;
+}
+
+.news-grid span:nth-child(4n+1), .news-grid span:nth-child(4n+2) {
+    background-color: rgb(240, 240, 240);
+}
+
+
+/*-------currentProjects------------*/
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 12px;
+}
+
+.project-col-2 h4 {
+    margin: 0;
+}
+
+.project-col-2 p {
+    font-size: 12pt;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+
+.project-col-1 {
+    background-size: cover;
+    background-position: center center;
+    border: 2px solid black;
+    height: 90px;
+}
+
+#project1 {
+    background-image: url('https://image.freepik.com/free-vector/hand-drawn-background-mobile-phone-with-checklist_23-2147607986.jpg');
+}
+#project2 {
+    background-image: url('https://image.freepik.com/free-vector/chatbot-concept-background-with-mobile-device_23-2147831507.jpg');
+}
+#project3 {
+    background-image: url('https://image.freepik.com/free-vector/characters-senior-people-holding-healthcare-icons_53876-43277.jpg');
+}
+#project4 {
+    background-image: url('https://image.freepik.com/free-vector/man-woman-browsing-internet-medical-website_1262-19802.jpg');
+}
+#project5 {
+    background-image: url('https://image.freepik.com/free-vector/sketchy-children_23-2147515093.jpg');
+}
+#project6 {
+    background-image: url('https://image.freepik.com/free-vector/modern-coffee-shop-interior-with-flat-design_23-2147905685.jpg');
+}
+#project7 {
+    background-image: url('https://image.freepik.com/free-vector/business-people-working-project-flat-icon_1262-18770.jpg');
+}
+#project8 {
+    background-image: url('https://image.freepik.com/free-vector/apple-watch_1034-36.jpg');
+}
+#project9 {
+    background-image: url('https://image.freepik.com/free-vector/mobile-background-appliances-with-internet_23-2147635903.jpg');
+}
+#project10 {
+    background-image: url('https://image.freepik.com/free-vector/antigravity-people-background_23-2148074425.jpg');
+}
+
+
+#Affiliations ul li {
+    margin-bottom: 15px;
+}
+
+.publication-grid {
+    display: grid;
+    grid-template-rows: 3;
+    margin-bottom: 30px;
+}
+
+.paperTitle {
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 9px;
+}
+
+.authorship {
+    line-height: 120%;
+    margin-bottom: 9px;
+}
+
+
+#conference, #dissert {
+    margin-top: 60px;
+}
+
+@media (max-width: 600px){
+    .project-col-1 {
+        display: none;
+    }
+}
+
+
+@media (min-width: 600px){
+    .sidebar {
+        grid-template-areas:
+        "hd nv";
+        height: 90px;
+        align-items: end;
+        padding-bottom: 20px;
+    }
+
+    #nav-main {
+        margin-bottom: 9px;
+
+    }
+
+    .nav-list {
+        margin: 0;
+    }
+
+    .mainpage {
+        display: grid;
+        grid-template-rows: 120px auto;
+    }
+
+    .project-grid {
+        grid-template-columns: 2fr 3fr;
+        grid-column-gap: 12px;
+    }
+
+    .project-col-1 {
+        height: 150px;
+    }
+}
+
+
+@media (min-width: 800px){
+    .container{
+        margin-top: 30px;
+    }
+
+    .mainpage {
+        grid-template-columns: 270px auto;
+        grid-template-rows: 66px auto;
+        grid-column-gap: 12px;
+    }
+
+    .sidebar{
+        width: 270px;
+        margin-top: 30px;
+        grid-template-areas:
+        "hd"
+        "nv";
+    }
+
+    .sidebar h1 {
+        margin: 0 auto;
+        padding: 0;
+        font-size: 32px;
+    }
+    
+    .contents {
+        max-width: 700px;
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+
+    .nav-list {
+        margin-top: 30px;
+    }
+
+    .nav-item {
+        display: block;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    .mail {
+        grid-area: mail;
+    }
+
+    .sns {
+        grid-area: sns;
+    }
+
+    .office {
+        grid-area: office;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 12px;
+        grid-template-areas: 
+        "mail sns"
+        "office office";
+    }
+
+    .news-grid {
+        grid-template-columns: 75px auto;
+        grid-row-gap: 12px;
+    }
+
+    .news-col-2 {
+        padding-bottom: 0;
+    }
+
+    .project-grid {
+        grid-row-gap: 15px;
+        grid-template-columns: 2fr 3fr;
+    }
+    
+    .project-col-1 {
+        height: 200px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
