@@ -1,146 +1,125 @@
 /*--- basic setting ---*/
 
 
-a {
-    text-decoration: none;
-    color: black;
-}
 
 body {
-    font-family: 'Martel';
-    background: white;
-    margin-left: 9px;
-    margin-right: 9px;
-}
-
-.mainpage {
-    display: grid;
-    grid-template-rows: 180px auto;
-}
-
-#footer {
-    height: 120px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: white;
+    padding:0;
+    margin:0;
 }
 
 
-/*-- sidebar setting --*/
 
-#header-logo {
+
+/*-- header setting --*/
+
+header {
+    /*overflow: hidden;*/
+    display: inline-block;
+    position:fixed;
+    top:0;
+    left:0;
+    width:225px;
+    height: 100%;
+    padding: 1rem;
+    background: linear-gradient(145deg, #143060, #0f2852);
+    /*background-color:#142b53;*/
+    /*background-color: rgb(0, 71, 149);*/
+    /*justify-content: space-between;*/
+    align-items: center;
+}
+
+a.header-btn {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+#logo_img {
     background-image: url('logo_mglee.png');
     background-size: cover;
-    height: 40px;
-    width: 70px;
+    height: 46px;
+    width: 80px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 
-header {
-    grid-area: hd;
+.logo h1 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin: 0px;
 }
 
-nav {
-    grid-area: nv;
+.navbar {
+    margin-right:2rem;
 }
 
-.sidebar {
-    display: grid;
-    grid-template-areas:
-    "hd"
-    "nv";
-    position: fixed;
-    padding-top: 15px;
-    padding-bottom: 6px;
-    height: auto;
-    width: 100vw;
-    background: white;
-    top: 0;
-}
-
-
-.sidebar h1 {
-    font-weight: 900;
-    margin: 0px 30px 0px 0px;
-    font-size: 32px;
-    
-}
-
-
-  
-
-/*
-.sidebar h1 {
+.navbar a {
     display: inline-block;
-    font-size: 20pt;
-    border-style: solid;
-    border-image: linear-gradient(to right, #00249c 0%,#0098d4 100%);
-    border-image-slice: 1;
-    border-width: 5px;
-    padding: 6px;
-    margin: 0px 6px 0px 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    background-image: -webkit-linear-gradient(bottom left, #00249c 0%,#0098d4 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}*/
-
-
-
-.nav-list {
-    padding: 0;
-    margin: 20px 0px 0px 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 14px;
+    padding: 9px 0px;    
 }
 
-.nav-item {
-    display: inline-block;
-    font-size: 12pt;
-    margin: 0;
-}
-
-.nav-item a:hover {
+/*.nav-item a:hover {
     background: #0e3e7e;
     color: white;
+}*/
+
+/*-- main content setting --*/
+
+#main-content {
+    padding-left: 320px;
+    padding-right: 90px;
 }
 
-
-
-/*-- contents --*/
-
-
-.contents {
-    background: white;
-    grid-row-start: 2;
+#main-introduction {
+    /*transform-style: preserve-3d;*/
+    /*position: relative;*/
+    /*perspective: 4px;*/
+    overflow:hidden;
+    margin:0;
 }
 
-.contents a{
-    color: #af0000;
-
+#main-introduction h1 {
+    font-size: 48px;
 }
-
-.contents a:hover{
-    color: #001646;
-    text-decoration: underline;
-
-}
-
-
-#newsEvents, #Affiliations, #currentProjects {
-    margin-top: 60px;
-
-}
-
-/*-------backgroundimg------------*/
-
 
 #profileImage {
-    height: 200px;
-    background-image: url('IMG_1349.jpeg');
-    background-position: center bottom;
-    background-size: cover;
+    background-image: url('IMG_0172.jpeg');
+    background-position: 45% 50%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 420px;
+    /*background-attachment:fixed;
+    /*transform: translate3d(-200px, -400px, -2px) scale(2);
+    z-index: -1;*/
+}
+
+#mglee-description {
+    margin-top: 60px;
 }
 
 
-/*-------contact------------*/
+#mglee-description p {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.inst_link {
+    color: rgb(156, 0, 29);
+    font-weight: 600;
+}
+
+.em_link {
+    color: rgb(156, 0, 29);
+    font-weight: 600;
+}
+
 
 .contact-grid {
     display: grid;
@@ -148,23 +127,48 @@ nav {
     grid-row: 3;
 }
 
+.contact-link {
+    color: rgb(0, 200, 255);
+}
+
+.contact-area {
+    float: right;
+    background-color: #6681ae;
+    height: 345px;
+    width: 420px;
+    padding: 45px;
+    margin-top: 90px;
+    margin-right: 90px;
+    margin-bottom: -90px;
+    color: rgb(0, 0, 0);
+    border-radius: 35px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  20px 20px 60px #d9d9d9,
+                  -20px -20px 60px #ffffff;
+    transform: rotate(-6deg);
+}
 
 
 
+/* news contents */
 
-/*-------newsandevents------------*/
-
+#news-content {
+    padding-bottom: 180px;
+}
 
 .news-grid {
-    display: grid;   
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-gap: 0px;
 }
 
 .news-col-2 {
-    padding-bottom: 12px;
+    padding: 12px;
 }
 
 .news-col-1 {
-    font-weight: 900;
+    font-weight: 700;
+    padding: 12px;
 }
 
 .news-grid span:nth-child(4n+1), .news-grid span:nth-child(4n+2) {
@@ -172,76 +176,40 @@ nav {
 }
 
 
-/*-------currentProjects------------*/
+/* publicacion */
 
-.project-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 12px;
-}
-
-.project-col-2 h4 {
-    margin: 0;
-}
-
-.project-col-2 p {
-    font-size: 12pt;
-    margin: 0;
-    padding-bottom: 12px;
-}
+/*-- contents --*/
 
 
-.project-col-1 {
-    background-size: cover;
-    background-position: center center;
-    border: 2px solid black;
-    height: 90px;
-}
-
-#project1 {
-    background-image: url('https://image.freepik.com/free-vector/hand-drawn-background-mobile-phone-with-checklist_23-2147607986.jpg');
-}
-#project2 {
-    background-image: url('https://image.freepik.com/free-vector/chatbot-concept-background-with-mobile-device_23-2147831507.jpg');
-}
-#project3 {
-    background-image: url('https://image.freepik.com/free-vector/characters-senior-people-holding-healthcare-icons_53876-43277.jpg');
-}
-#project4 {
-    background-image: url('https://image.freepik.com/free-vector/man-woman-browsing-internet-medical-website_1262-19802.jpg');
-}
-#project5 {
-    background-image: url('https://image.freepik.com/free-vector/sketchy-children_23-2147515093.jpg');
-}
-#project6 {
-    background-image: url('https://image.freepik.com/free-vector/modern-coffee-shop-interior-with-flat-design_23-2147905685.jpg');
-}
-#project7 {
-    background-image: url('https://image.freepik.com/free-vector/business-people-working-project-flat-icon_1262-18770.jpg');
-}
-#project8 {
-    background-image: url('https://image.freepik.com/free-vector/apple-watch_1034-36.jpg');
-}
-#project9 {
-    background-image: url('https://image.freepik.com/free-vector/mobile-background-appliances-with-internet_23-2147635903.jpg');
-}
-#project10 {
-    background-image: url('https://image.freepik.com/free-vector/antigravity-people-background_23-2148074425.jpg');
-}
 
 
-#Affiliations ul li {
-    margin-bottom: 15px;
+.publication-list {
+    background: white;
+    grid-row-start: 2;
+    padding-bottom: 120px;
+}
+
+.publication-list a{
+    color: #005b80;;
+
+}
+
+.publication-cat {
+    background-color: #005b80;
+    font-size: 28px;
+    margin-top: 60px;
+    padding-left:12px;
+    color: white;
 }
 
 .publication-grid {
     display: grid;
     grid-template-rows: 3;
-    margin-bottom: 30px;
+    margin-bottom: 21px;
 }
 
 .paperTitle {
-    font-size: 18px;
+    font-size: 21px;
     line-height: 120%;
     margin-bottom: 9px;
 }
@@ -255,134 +223,3 @@ nav {
 #conference, #dissert {
     margin-top: 60px;
 }
-
-@media (max-width: 600px){
-    .project-col-1 {
-        display: none;
-    }
-}
-
-
-@media (min-width: 600px){
-    .sidebar {
-        grid-template-areas:
-        "hd nv";
-        height: 90px;
-        align-items: end;
-        padding-bottom: 20px;
-    }
-
-    #nav-main {
-        margin-bottom: 9px;
-
-    }
-
-    .nav-list {
-        margin: 0;
-    }
-
-    .mainpage {
-        display: grid;
-        grid-template-rows: 120px auto;
-    }
-
-    .project-grid {
-        grid-template-columns: 2fr 3fr;
-        grid-column-gap: 12px;
-    }
-
-    .project-col-1 {
-        height: 150px;
-    }
-}
-
-
-@media (min-width: 800px){
-    .container{
-        margin-top: 30px;
-    }
-
-    .mainpage {
-        grid-template-columns: 270px auto;
-        grid-template-rows: 66px auto;
-        grid-column-gap: 12px;
-    }
-
-    .sidebar{
-        width: 270px;
-        margin-top: 30px;
-        grid-template-areas:
-        "hd"
-        "nv";
-    }
-
-    .sidebar h1 {
-        margin: 0 auto;
-        padding: 0;
-        font-size: 32px;
-    }
-    
-    .contents {
-        max-width: 700px;
-        grid-row-start: 1;
-        grid-column-start: 2;
-    }
-
-    .nav-list {
-        margin-top: 30px;
-    }
-
-    .nav-item {
-        display: block;
-        margin-left: 30px;
-        margin-bottom: 10px;
-    }
-
-    .mail {
-        grid-area: mail;
-    }
-
-    .sns {
-        grid-area: sns;
-    }
-
-    .office {
-        grid-area: office;
-    }
-
-    .contact-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 12px;
-        grid-template-areas: 
-        "mail sns"
-        "office office";
-    }
-
-    .news-grid {
-        grid-template-columns: 75px auto;
-        grid-row-gap: 12px;
-    }
-
-    .news-col-2 {
-        padding-bottom: 0;
-    }
-
-    .project-grid {
-        grid-row-gap: 15px;
-        grid-template-columns: 2fr 3fr;
-    }
-    
-    .project-col-1 {
-        height: 200px;
-    }
-}
-
-@media (min-width: 1000px) {
-    .container {
-        width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
