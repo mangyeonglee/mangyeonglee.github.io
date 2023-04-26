@@ -10,6 +10,9 @@ body {
     margin:0;
 }
 
+a {
+    color: #005b80;
+}
 
 
 
@@ -61,7 +64,7 @@ a.header-btn {
     display: inline-block;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
     padding: 9px 0px;    
 }
 
@@ -75,6 +78,7 @@ a.header-btn {
 #main-content {
     padding-left: 320px;
     padding-right: 90px;
+    width: 60%;
 }
 
 #main-introduction {
@@ -111,12 +115,12 @@ a.header-btn {
 }
 
 .inst_link {
-    color: rgb(156, 0, 29);
+    color:  #005b80;
     font-weight: 600;
 }
 
 .em_link {
-    color: rgb(156, 0, 29);
+    color: #005b80;
     font-weight: 600;
 }
 
@@ -146,6 +150,27 @@ a.header-btn {
     box-shadow:  20px 20px 60px #d9d9d9,
                   -20px -20px 60px #ffffff;
     transform: rotate(-6deg);
+}
+
+/* affiliation contents */
+
+#affiliation-content {
+    padding-bottom: 180px;
+}
+
+.affiliation-grid {
+    display: grid;
+    grid-template-columns: 180px auto;
+    grid-gap: 0px;
+}
+
+.affiliation-col-2 {
+    padding: 12px;
+}
+
+.affiliation-col-1 {
+    font-weight: 700;
+    padding: 12px;
 }
 
 
@@ -209,7 +234,7 @@ a.header-btn {
 }
 
 .paperTitle {
-    font-size: 21px;
+    font-size: 18px;
     line-height: 120%;
     margin-bottom: 9px;
 }
