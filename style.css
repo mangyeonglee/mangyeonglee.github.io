@@ -291,15 +291,8 @@ a.header-btn {
 
 /*------RESPONSIVE-------*/
 
-@media (max-width: 350px){
 
-    #main-introduction h1 {
-        font-size: 32px;
-    }
-
-}
-
-@media (max-width: 1000px){
+@media (max-width: 900px){
     header{
         display: inline-flex;
         height: 60px;
