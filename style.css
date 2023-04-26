@@ -124,6 +124,22 @@ a.header-btn {
     font-weight: 600;
 }
 
+/* contact */
+
+.contact-area {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.contact-title {
+    display:inline-block;
+    background-color: #005b80;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 12px;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
 
 .contact-grid {
     display: grid;
@@ -132,14 +148,14 @@ a.header-btn {
 }
 
 .contact-link {
-    color: rgb(0, 200, 255);
+    color: rgb(0, 173, 221);
 }
 
-.contact-area {
+/*.contact-area {
     float: right;
     background-color: #6681ae;
     height: 345px;
-    width: 420px;
+    width: 50%;
     padding: 45px;
     margin-top: 90px;
     margin-right: 90px;
@@ -150,12 +166,12 @@ a.header-btn {
     box-shadow:  20px 20px 60px #d9d9d9,
                   -20px -20px 60px #ffffff;
     transform: rotate(-6deg);
-}
+}*/
 
 /* affiliation contents */
 
 #affiliation-content {
-    padding-bottom: 180px;
+    padding-bottom: 90px;
 }
 
 .affiliation-grid {
@@ -178,12 +194,12 @@ a.header-btn {
 /* news contents */
 
 #news-content {
-    padding-bottom: 180px;
+    padding-bottom: 90px;
 }
 
 .news-grid {
     display: grid;
-    grid-template-columns: 80px auto;
+    grid-template-columns: 120px auto;
     grid-gap: 0px;
 }
 
@@ -247,4 +263,35 @@ a.header-btn {
 
 #conference, #dissert {
     margin-top: 60px;
+}
+
+
+/* honors */
+
+#honors-area {
+    padding-bottom: 90px;
+}
+
+.honors-grid {
+    display: grid;
+    grid-template-columns: 180px auto;
+    grid-gap: 0px;
+}
+
+.honors-col-2 {
+    padding: 12px;
+}
+
+.honors-col-1 {
+    font-weight: 700;
+    padding: 12px;
+}
+
+
+
+/*------RESPONSIVE-------*/
+
+
+@media (min-width: 800px){
+     
 }
