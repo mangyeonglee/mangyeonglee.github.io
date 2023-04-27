@@ -90,21 +90,22 @@ a.header-btn {
 
 #main-introduction h1 {
     font-size: 48px;
+    
 }
 
 #profileImage {
     background-image: url('IMG_0172.jpeg');
-    background-position: 45% 50%;
+    background-position: 120px 70%;
     background-size:cover;
     background-repeat: no-repeat;
-    height: 420px;
+    height: 600px;
     background-attachment:fixed;
-    transform: translate3d(0px, 0px, -2px) scale(2);
+    /*transform: translate3d(30px, 7%, 1.5px) scale(0.5);*/
     z-index: -1;
 }
 
 #mglee-description {
-    margin-top: 210px;
+    margin-top:0;
 }
 
 
@@ -291,7 +292,7 @@ a.header-btn {
 /*------RESPONSIVE-------*/
 
 
-@media (max-width: 900px){
+@media (max-width: 1000px){
     header{
         z-index: 1;
         display: inline-flex;
@@ -322,14 +323,13 @@ a.header-btn {
     }
 
     #profileImage {
-        height: 240px;
-        width: 50%;
-        margin-left: -30px;
-        margin-top: -21px;
+        height: 400px;
+        background-position: -180px 40%;
+        transform: translate3d(0, 60px, 1.5) scale(0.5);
     }
 
     #mglee-description {
-        margin-top: 210px;
+        margin-top: 30px;
     }
 
     .affiliation-grid {
