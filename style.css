@@ -82,8 +82,8 @@ a.header-btn {
 }
 
 #main-introduction {
-    transform-style: preserve-3d;
-    position: relative;
+    /*transform-style: preserve-3d;
+    position: relative;*/
     perspective: 4px;
     overflow:hidden;
 }
@@ -95,7 +95,7 @@ a.header-btn {
 
 #profileImage {
     background-image: url('IMG_0172.jpeg');
-    background-position:210px 50%;
+    background-position: 210px 50%;
     background-size:cover;
     background-repeat: no-repeat;
     height: 360px;
