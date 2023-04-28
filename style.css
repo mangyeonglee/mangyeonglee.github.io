@@ -95,11 +95,11 @@ a.header-btn {
 
 #profileImage {
     background-image: url('IMG_0172.jpeg');
-    background-position: 120px 70%;
+    background-position:210px 50%;
     background-size:cover;
     background-repeat: no-repeat;
-    height: 600px;
-    background-attachment:fixed;
+    height: 360px;
+    /*background-attachment:fixed;*/
     /*transform: translate3d(30px, 7%, 1.5px) scale(0.5);*/
     z-index: -1;
 }
@@ -323,9 +323,13 @@ a.header-btn {
     }
 
     #profileImage {
-        height: 400px;
-        background-position: -180px 40%;
-        transform: translate3d(0, 60px, 1.5) scale(0.5);
+        height: 300px;
+        background-position: 150px 50%;
+    }
+
+    #main-introduction h1 {
+        font-size: 36px;
+
     }
 
     #mglee-description {
